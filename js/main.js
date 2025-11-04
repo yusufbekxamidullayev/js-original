@@ -14,16 +14,18 @@ getData("users" , (users) => {
                     </div>
                     <div class="flex items-center justify-between px-[7px] mt-[10px] pb-[10px]">
                         <button class="w-[85px] h-[35px] rounded-[5px] bg-[#fff]/60">
-                            <a class="text-[orange]" href="">Todos</a>
+                            <a class="text-[orange]" href="../todos.html?userId=${el.id}">Todos</a>
                         </button>
                         <button class="w-[85px] h-[35px] rounded-[5px] bg-[#fff]/60">
                             <a class="text-[orange]" href="./posts.html?userId=${el.id}">Posts</a>
                         </button>
                         <button class="w-[75px] h-[35px] rounded-[5px] bg-[#fff]/60">
-                            <a class="text-[orange]" href="">Gallery</a>
+                            <a class="text-[orange]" href="../gallery.html?userId=${el.id}">Gallery</a>
                         </button>
                     </div>
                 </div>
         `
     })
 });
+
+

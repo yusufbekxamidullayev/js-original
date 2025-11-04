@@ -11,3 +11,24 @@ function getData(url, callback) {
         }
     };
 }
+
+
+getData("users" , (users) => {
+    console.log(users);
+    getData("posts" , (posts) => {
+        console.log(posts);
+        getData("comments" , (comments) => {
+            console.log(comments);
+        })
+    })
+})
+
+
+
+
+let loadingScreen = document.getElementById("loading");
+
+window.addEventListener("load", function () {
+    loadingScreen.classList.add("hidden")
+})
+

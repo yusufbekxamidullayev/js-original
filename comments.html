@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posts</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     
     <div id="loading" class="fixed top-0 w-full h-full z-[5] ">
         <img class="w-full h-full" src="/assets/image/Spinner@1x-1.0s-200px-200px.svg" alt="">
     </div>
 
-
     <main class="bg-[blue]/50">
         <div class="container mx-auto">
-                <h1 class="text-[35px] py-[30px] text-[white] font-bold text-center">Posts</h1>
-                <div id="users-post" class="flex flex-col items-center gap-[20px]">
-                    
-                </div>
+            <h1 class="text-[35px] py-[30px] text-[white] font-bold text-center">Comments</h1>
+            <div id="post-comment" class="flex flex-col items-center gap-[20px] pb-[20px]">
+    
+            </div>
         </div>
     </main>
 
-    <script src="./js/data.js"></script>
-    <script src="./js/posts.js"></script>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/load.js"></script>
+    <script src="/js/comments.js"></script>
 </body>
+
 </html>
